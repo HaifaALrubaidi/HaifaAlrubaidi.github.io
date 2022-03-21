@@ -1,48 +1,21 @@
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
- * Created by MC on 13/03/2022.
+ * Created by MC on 30/01/2022.
  */
 public class Test {
     public static void main(String[] args) {
-        int a[]={1,2,3,4,5};
-//       System.out.println(Arrays.toString(a));
-//        System.out.println("After");
-//        r(a);
-//        System.out.println(Arrays.toString(a));
-//    }
-//    public static int[]r(int []x)
-//    {
-//        int n=x.length-1;
-//        for (int i = 0; i <x.length/2 ; i++) {
-//            int t=x[i];
-//            x[i]=x[n];
-//            x[n]=t;
-//            n--;
-//        }
-//        return x;
-
-
-        //***************************************************************
-//        System.out.println(Arrays.toString(a));
-//        System.out.println("After");
-//       e(a);
-
+        ArrayQueue<Character>Q=new ArrayQueue<>(5);
+        Scanner in =new Scanner(System.in);
+        System.out.println("Enter Queue element");
+        for (int i = 0; i <5 ; i++) {
+           Q.enqueue(in.next().charAt(0));
+            System.out.println(" first  "+Q.first());
+            System.out.println("size ="+Q.size());
+        }
+        System.out.println("all element are");
+       while (!Q.isEmpty())
+           System.out.print(Q.dequeue()+"\t");
     }
-
-
-//   public static void e(int []x)
-//   {
-//       int y[]=new int[x.length];
-//       for (int i = 0; i <x.length ; i++) {
-//           y[i]=x[x.length-1-i];
-//       }
-//       for (int i = 0; i <x.length ; i++) {
-//           x[i]=y[i];
-//       }
-//       for (int i = 0; i <x.length ; i++) {
-//           System.out.println(x[i]);
-//       }
-//   }
-    //*******************************************************************
 }
