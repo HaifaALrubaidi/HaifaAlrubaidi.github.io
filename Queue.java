@@ -1,5 +1,5 @@
 /**
- * Created by MC on 30/01/2022.
+ * Created by MC on 20/02/2022.
  */
 public interface Queue <E> {
     boolean isEmpty();

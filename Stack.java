@@ -1,8 +1,7 @@
 /**
- * Created by MC on 23/01/2022.
+ * Created by MC on 20/02/2022.
  */
-public interface Stack<E>
-{
+public interface Stack<E> {
     boolean isEmpty();
     int size();
     void push(E element);
